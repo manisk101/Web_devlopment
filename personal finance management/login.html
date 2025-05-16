@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <div class="container">
+            <form action="#" class="form">
+                <div class="text">Sign In</div>
+                <div class="feild">
+                    <input type="text" required class="field-control" id="userid">
+                     <label for="username" class="label">Username</label>
+                </div>
+                <div class="feild">
+                    <input type="password" required  class="field-control" id="userpassword">
+                    <label for="password" class="label">Enter your password</label>
+
+                </div>
+                <div class="btn">
+                    <input type="submit" class="btn-btn" id="sign">
+                </div>
+             <h3>Don't have an account?<a href="register.html">register her</a> </h3>
+                   
+            </form>
+
+            
+
+    </div>
+</body>
+
+<script>document.getElementById('sign').addEventListener('click',function(event){
+    event.preventDefault();
+    const userid=document.getElementById('userid').value.trim()
+    const userpswd=document.getElementById('userpassword').value;
+    console.log(userid)
+    console.log(userpswd)
+
+
+    const users=JSON.parse(localStorage.getItem('register') || '[]');
+    const finduser=users.find(user=> user.user===userid && user.pswd === userpswd)
+
+    if(finduser){
+        localStorage.setItem('currentUser', JSON.stringify(finduser));
+        window.location.replace("index.html")
+    }
+    else{
+        alert("incorrect password")
+    }
+})
+</script>
+
+</html>

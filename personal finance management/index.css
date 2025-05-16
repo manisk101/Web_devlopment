@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    user-select: none;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(204, 179, 214, 1) 38%, rgba(198, 180, 216, 1) 45%, rgba(189, 181, 219, 1) 55%, rgba(148, 187, 233, 1) 100%);
+
+
+}
+
+.sidebar{
+    background-color: black;
+    min-height: 100vh;
+    width: 300px;
+    color: aliceblue;
+    position: fixed;
+    top:0;
+    margin-left: -300px;
+    transition: 0.6s ease;
+   
+
+}
+.active{
+    margin-left: 0px;
+}
+
+
+header .img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    
+}
+header .img img{
+    width: 100%;
+    height: 110%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background-color: gray;
+}
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    right: 0;
+    cursor: pointer;
+  
+}
+header h1{
+    font-size:xx-large;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    
+}
+
+
+.menu{
+    margin-top: 20px;
+    width: 100%;
+
+}
+.menu .items a ion-icon{
+    font-size: 24px;
+    margin-left: 10px;
+    display: flex;
+
+   
+
+}
+.menu .items a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    line-height: 30px;
+    padding: 10px;
+
+
+}
+.menu .items a:hover{
+    background-color:rgba(128, 128, 128, 0.485);
+}
+
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+    transition: margin-left 0.8s ease;
+    padding: 20px;
+}
+
+
+.sidebar.active ~ .main-content {
+    margin-left: 300px;
+    transition: 0.8s ease;
+   
+
+}
+
+.sidebar.active -open .nav h1{
+    margin-left: 300px;
+    
+}
+
+.nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width:100vw;
+    background-color: rgb(50, 49, 47);
+    padding: 20px;
+
+}
+
+.nav h1 {
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    pointer-events: none; 
+    padding: 5px;
+    color: aliceblue;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.sidebar.active ~ .nav h1 {
+    margin-left: 300px;
+    transition: 0.8s ease;
+   
+
+}
+
+
+.container{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topic{
+    font-size: 50px;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+.sub-topic{
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 1px;
+}

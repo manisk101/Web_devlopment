@@ -1,0 +1,56 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -200px;
+    background-color: rgba(240, 248, 255, 0);
+}
+table{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+
+}
+th{
+    background-color: rgba(25, 25, 215, 0.593);
+    padding: 15px;
+    font-size: 20px;
+    color: aliceblue ;
+    font-weight: 800;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(36, 132, 216);
+    
+}
+tr:nth-child(even){
+    background-color: rgb(208, 226, 243);
+    
+}
+td{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.delete-btn{
+    background:none;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(157, 153, 153, 0.556);
+    font-weight: 600;
+}
+.delete-btn:hover{
+    background-color: rgb(202, 6, 6);
+    transition: .8s;
+
+}
+
+.heading{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}

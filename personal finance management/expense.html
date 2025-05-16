@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/expense.css">
+    <title>expense</title>
+</head>
+<body>
+<div class="nav">
+
+<div class="menu-btn"><ion-icon name="menu"></ion-icon>
+</div>
+<h1>Personal Finance Management</h1>
+</div>
+<div class="sidebar">
+   
+    <header>
+        <div class="close-btn"><ion-icon name="close-circle"></ion-icon>
+        </div>
+        
+
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFcoNkDNEQ9sXq36dfEj8FZjB4n_X3VFFew&s" alt="img">
+        </div>
+        <h1>Manikandan</h1>
+    </header>
+    <div class="menu">
+    <div class="items">
+        <a href="index.html"><ion-icon name="home"></ion-icon>Home</a>
+    </div>
+    <div class="items"> 
+        <a href="wallet.html"><ion-icon name="wallet"></ion-icon>Wallet</a>
+    </div>
+    <div class="items"> 
+        <a href="expense.html"><ion-icon name="bag-add"></ion-icon>Expenditure</a>
+    </div>
+    <div class="items">
+         <a href="transaction.html"><ion-icon name="card"></ion-icon>Transactions</a>
+    </div>
+        <div class="items">
+         <a href="#" id="logout"><ion-icon name="log-out" ></ion-icon>Log Out</a>
+    </div>
+
+    </div>
+
+       
+       
+</div>
+
+<div class="main-content">
+           <div class="container">
+            <form action="" class="forms">
+                <h3 class="heading">Add Expenditure</h3>
+                <table>
+                    <tr>
+                        <td>Date</td>
+                        <td><input type="date" required id="date" class="field-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td><input type="text" required id="descp" class="field-control"></td>
+                    </tr>
+                    <tr>
+                        <td>category</td>
+                        <td><input type="text" required id="cat" class="field-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Amount</td>
+                        <td><input type="text" required id="amount" class="field-control"></td>
+                    </tr>
+
+                </table>
+                <div class="btn">
+                         <input type="submit" value="submit" id="submit">
+                </div>
+               
+                
+            </form>
+           </div>
+           
+</div>
+    
+</body>
+<script src="/expense.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="index.js">
+
+
+</script>
+</html>

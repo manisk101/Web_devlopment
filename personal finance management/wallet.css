@@ -1,0 +1,107 @@
+.subcontainer{
+    height: 500px;
+    min-width: 400px;
+    align-items: center;
+    align-content: center;
+    flex-direction:row;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.box{
+    width:400px;
+    height: 400px;
+    background-color: rgb(252, 245, 245);
+    margin: 50px;
+    border-radius: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    background: #020024;
+    background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 0.14) 0%, rgba(87, 199, 133, 0.16) 50%, rgba(83, 234, 237, 0.33) 97%);
+}
+.logo{
+    font-size: 80px;
+    padding: 10px;
+    text-align: center;
+}
+.box-text1{
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: rgba(0, 51, 255, 0.847);
+    text-align: center;
+}
+.box-text2{
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: rgb(26, 138, 9);
+    text-align: center;
+}
+.box-text3{
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: rgb(214, 27, 27);
+    text-align: center;
+}
+.ruppees{
+    position: relative;
+    margin: 20px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.101);
+    padding: 10px;
+    border-radius: 20px;
+}
+.ruppees i{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin-left: 40px;
+   
+    
+}
+.add input{
+    background: none;
+    background-color: rgba(240, 248, 255, 0.412);
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    border-color: gray;
+    outline: none;
+    
+}
+.add{
+    text-align: center;
+    padding: 10px;
+
+}
+.add .btn{
+    background: none;
+    background-color: rgba(240, 248, 255, 0.412);
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    border-color: gray;
+    outline: none;
+    padding: 3px;
+
+}
+.btn:hover{
+    background-color: green;
+     transition: .8s;
+     box-shadow: gray 0px 1px 3px ;
+}
+
+.rs{
+   margin-left: 30px;
+
+}

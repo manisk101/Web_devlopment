@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/wallet.css">
+    <title>wallet</title>
+</head>
+<body>
+<div class="nav">
+
+<div class="menu-btn"><ion-icon name="menu"></ion-icon>
+</div>
+<h1>Personal Finance Management</h1>
+</div>
+<div class="sidebar">
+   
+    <header>
+        <div class="close-btn"><ion-icon name="close-circle"></ion-icon>
+        </div>
+        
+
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFcoNkDNEQ9sXq36dfEj8FZjB4n_X3VFFew&s" alt="img">
+        </div>
+        <h1>Manikandan</h1>
+    </header>
+    <div class="menu">
+    <div class="items">
+        <a href="index.html"><ion-icon name="home"></ion-icon>Home</a>
+    </div>
+    <div class="items"> 
+        <a href="wallet.html"><ion-icon name="wallet"></ion-icon>Wallet</a>
+    </div>
+    <div class="items"> 
+        <a href="expense.html"><ion-icon name="bag-add"></ion-icon>Expenditure</a>
+    </div>
+    <div class="items">
+         <a href="transaction.html"><ion-icon name="card"></ion-icon>Transactions</a>
+    </div>
+        <div class="items">
+         <a href="#"  id="logout"><ion-icon name="log-out"></ion-icon>Log Out</a>
+    </div>
+
+    </div>    
+</div>
+
+<div class="main-content">
+           
+<div class="subcontainer">
+    <div class="box">
+        <div class="logo"><i class="fa-solid fa-building-columns" ></i></div>
+        <h3 class="box-text1">Total Balance</h3>
+        <div class="ruppees">
+            <i class="fa-solid fa-indian-rupee-sign"><p id="balance" class="rs">0</p></i>
+        </div>
+        <div class="add">
+            <input type="text" placeholder="Add Money" id="moneyInput">
+            <input type="submit" value="Add" class="btn" onclick="addMoney()">
+        </div>
+    </div>
+    <div class="box">
+        <div class="logo"><i class="fa-solid fa-piggy-bank"></i></div>
+
+        <h3 class="box-text2">Current Balance</h3>
+        <div class="ruppees">
+            <i class="fa-solid fa-indian-rupee-sign"><p id="current-balance" class="rs">0</p></i>
+        </div>
+        
+    </div>
+    <div class="box">
+        <div class="logo"><i class="fa-solid fa-money-bill-transfer"></i></div>
+        <h3 class="box-text3">Total Expense</h3>
+        <div class="ruppees">
+            <i class="fa-solid fa-indian-rupee-sign"><p id="total-amount" class="rs">0</p></i>
+        </div>
+    </div>
+    
+
+</div>    
+</body>
+<script src="wallet.js"></script>
+<script  src="transaction.js"></script>
+<script src="https://kit.fontawesome.com/c8483d4082.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="index.js"></script>
+
+
+</html>

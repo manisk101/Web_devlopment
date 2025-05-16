@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    min-height: 300px;
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgb(100, 97, 97) 0 1px 5px;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.feild{
+    height: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.field-control{
+    position: absolute;
+    background: none;
+    width: 100%;
+    height:100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    z-index: 1;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+.label{
+    position: absolute;
+    margin-left: 10px;
+    top: 13px;
+    color: gray;
+    background-color: white;
+    padding: 0 8px;
+    font-size: 16px;
+    transition:.5s;
+}
+
+.field-control:focus + .label{
+    top: -10px;
+    z-index: 2;
+    color:rgb(13, 163, 238);
+}
+.field-control:focus{
+    border-color:rgb(13, 163, 238);
+}
+.field-control:not(:focus):valid+label{
+    top: -10px;
+    z-index: 10;
+
+}
+.btn{
+    padding: 5px;
+    display:block;
+    text-align: center;
+}
+.btn-btn{
+    padding: 10px;
+    background: none;
+    border-radius: 10px;
+    font-weight: 400;
+    border-color: gray;
+ 
+   
+
+}
+.btn-btn:hover{
+    background-color: green;
+     transition: .8s;
+     box-shadow: gray 0px 1px 3px ;
+}
+h3,a{
+    font-weight: 300;
+    font-size: 18px;
+    padding: 5px;
+    
+}
+#mismatch{
+    display: none;
+    color: red;
+    font-weight: 300;
+}
