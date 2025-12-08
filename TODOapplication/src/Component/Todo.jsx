@@ -18,13 +18,24 @@ const Todo = () => {
 
   const [newinput, setNewInput] = useState("");
   const [isEditing, setisEditing] = useState(false);
+  const [currentID, setCurrentID] = useState(null);
 
   function addList() {
-    setItem([
-      ...items,
-      { id: items.length + 1, label: newinput, checked: false },
-    ]);
-    setNewInput("");
+    if (isEditing) {
+      setItem(
+        items.map((item) =>
+          item.id === currentID ? { ...item, label: newinput } : item)
+      );
+      setCurrentID(null);
+      setNewInput("");
+      setisEditing(false);
+    } else {
+      setItem([
+        ...items,
+        { id: items.length + 1, label: newinput, checked: false },
+      ]);
+      setNewInput("");
+    }
   }
 
   function handleCheckbox(id) {
@@ -45,9 +56,11 @@ const Todo = () => {
     );
   }
   function isUpadate(id) {
+    let updateItem = items.find((item) => item.id === id);
     setisEditing(true);
-    setNewInput()
-
+    setCurrentID(id);
+    console.log(updateItem.label);
+    setNewInput(updateItem.label);
   }
 
   return (
@@ -84,7 +97,7 @@ const Todo = () => {
               <DeleteIcon />
             </IconButton>
             <Button>
-              <EditIcon onClick={() => isUpadate(items.id)} />
+              <EditIcon onClick={() => isUpadate(item.id)} />
             </Button>
           </FormGroup>
         );
